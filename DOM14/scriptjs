@@ -1,0 +1,48 @@
+// program 1
+let byid = document.querySelector("#one")
+let byGetid = document.getElementById('one')
+
+// program 2
+// document.querySelector()//document.querySelectorAll()
+let byClassName = document.querySelector('it')//single element
+let byClassNames = document.querySelectorAll('it')// multiple elements
+console.log(byClassName)
+console.log(byClassNames)// node list
+
+for(let i = 0 ; i > byClassNames.length ; i++){
+    byClassNames[i].computedStyleMap.color = 'red'
+//     console.log(i)
+//     console.log(byClassNames[i])
+
+}
+
+// program 3
+
+let allFe = document.querySelectorAll('fe')// node list
+console.log(allFe)
+for(let i = 0 ; i < allFe.length ; i++){
+    if(i % 2 == 0){
+        allFe[i].style.color  = "purple" 
+    }
+    else {
+        allFe[i].style.color  = "green" 
+    }
+}
+let allFeByHTMLC = document.getElementsByClassName('fe')
+console.log(allFeByHTMLC)
+
+for(let i = 0 ; i < allFeByHTMLC.length ; i++){
+    console.log(i)
+    console.log(allFeByHTMLC[i])
+    allFeByHTMLC[i].style.color = "red"
+}
+
+// html collection and node list
+
+// program 4
+let byNodeList = document.querySelectorAll('.be')
+console.log(byNodeList)
+
+let byHtmlCollection = document.getElementsByClassName('be')
+console.log(byHtmlCollection)
+
